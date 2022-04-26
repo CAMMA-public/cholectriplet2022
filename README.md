@@ -1,16 +1,51 @@
+
+
+<div align="center">
+<a href="http://camma.u-strasbg.fr/">
+<img src="https://github.com/CAMMA-public/rendezvous/blob/main/files/CammaLogo.png" width="18%">
+</a>
+</div>
+<br/>
+
+[![](https://img.shields.io/badge/IN-PROGRESS-blue?style=for-the-badge)](https://hamzamohdzubair.github.io/redant/)
+
+
 # CholecTriplet2022
 CholecTriplet 2022 challenge on surgical action triplet detection
 
+<i>C.I. Nwoye, A. Murali, S. Sharma, T. Yu, K. Yuan, D. Alapatt, A. Vardazayan, and N. Padoy</i>
 
-## Data Loader
+<img src="file/logo2022.png" width="100%">
 
-
-## Practice On Sample Data
-
-
-## Docker Guide
+This repository contains some implementation code: mock demo model, data loader, docker build guides, self-validator system, and evaluation scripts.
 
 
-## Self-Validator
+## Getting started
+All information about the challenge can be found on the Grand-challenge [website](https://cholectriplet2022.grand-challenge.org).
 
 
+
+## Data loader
+- Open in Colab
+
+
+## Practice on sample data
+Easy starting code of simple model in TensorFlow or PyTorch on small sample data from CholecT50.
+- Open in [Colab](https://colab.research.google.com/github/CAMMA-public/cholectriplet2022/blob/main/Getting_Started.ipynb)
+
+
+## Evaluation metrics
+```
+  pip install ivtmetrics
+```
+
+## Docker guide
+
+
+## Self-validator
+
+
+## Submission protocol
+
+---
+maintainer @ camma 2022
