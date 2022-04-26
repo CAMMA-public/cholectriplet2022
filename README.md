@@ -20,24 +20,32 @@ CholecTriplet 2022 challenge on surgical action triplet detection
 This repository contains some implementation code: mock demo model, data loader, docker build guides, self-validator system, and evaluation scripts.
 
 
-## Getting Started
+## Getting started
 All information about the challenge can be found on the Grand-challenge [website](https://cholectriplet2022.grand-challenge.org).
 
 
-## Data Loader
+
+## Data loader
 - Open in Colab
 
 
-## Practice On Sample Data
+## Practice on sample data
 Easy starting code of simple model in TensorFlow or PyTorch on small sample data from CholecT50.
 - Open in [Colab](https://colab.research.google.com/github/CAMMA-public/cholectriplet2022/blob/main/Getting_Started.ipynb)
 
 
-## Docker Guide
+## Evaluation metrics
+```
+  pip install ivtmetrics
+```
+
+## Docker guide
 
 
-## Self-Validator
+## Self-validator
 
+
+## Submission protocol
 
 ---
 maintainer @ camma 2022
