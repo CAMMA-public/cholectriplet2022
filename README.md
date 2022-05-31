@@ -56,13 +56,13 @@ Easy starting code of simple model in TensorFlow or PyTorch on small sample data
 
 ## Docker and validation guide
 
-- Detailed instruction to build, test, validate, and run your method Docker on the challenge Dockerhub in provided [here](DockerREADME.md)
+- Detailed instruction to build, test, validate, and run your method Docker on the challenge Dockerhub in provided [here](docker.md)
 
 
 <br>
 
 ## Submission protocol
-- Follow the [guide](SubmitREADME.md) to upload your final Docker image.
+- Follow the [guide](submit.md) to upload your final Docker image.
 - Visit the [submission page](https://cholectriplet2022.grand-challenge.org/submission/) to submit your challenge reports
 
 <br>
