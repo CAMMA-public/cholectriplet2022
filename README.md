@@ -19,10 +19,14 @@ CholecTriplet 2022 challenge on surgical action triplet detection
 
 This repository contains some implementation code: mock demo model, data loader, docker build guides, self-validator system, and evaluation scripts.
 
+<br>
+
 
 ## <u>Getting started</u>
 All information about the challenge can be found on the Grand-challenge [website](https://cholectriplet2022.grand-challenge.org).
 
+
+<br>
 
 
 ## Data loader
@@ -35,6 +39,8 @@ All information about the challenge can be found on the Grand-challenge [website
 Easy starting code of simple model in TensorFlow or PyTorch on small sample data from CholecT50.
 - Open in [Colab](https://colab.research.google.com/github/CAMMA-public/cholectriplet2022/blob/main/Getting_Started.ipynb)
 
+<br>
+
 
 ## Evaluation metrics
 ```
@@ -45,14 +51,22 @@ Easy starting code of simple model in TensorFlow or PyTorch on small sample data
   conda install -c nwoye ivtmetrics
 ```
 
+<br>
+
+
 ## Docker and validation guide
 
-Detailed instruction to build, test, validate, run, and upload your method Docker on the challenge Dockerhub in provided [here](DockerREADME.md)
+- Detailed instruction to build, test, validate, and run your method Docker on the challenge Dockerhub in provided [here](DockerREADME.md)
 
+
+<br>
 
 ## Submission protocol
-- Follow the Docker build and validation guide to submit your docker
-- Submit also your summary report, validation log, and presentation slide
+- Follow the [guide](SubmitREADME.md) to upload your final Docker image.
+- Visit the [submission page](https://cholectriplet2022.grand-challenge.org/submission/) to submit your challenge reports
+
+<br>
+<br>
 
 
 ## Organizer's Baseline Method

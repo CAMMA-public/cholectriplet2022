@@ -11,9 +11,9 @@ Copyright &copy; CAMMA, ICube, University of Strasbourg. All Rights Reserved.
 <br />
 <br>
 
-----------------------------------------
-CholecTriplet 2022 Submission Guideline
-========================================
+---------------------------------------------------------
+CholecTriplet 2022 Docker Build and Validation Guidedline
+=========================================================
 
 1. Download the CholecTriplet2022 host resources [here]()
 
@@ -72,7 +72,7 @@ CholecTriplet 2022 Submission Guideline
 
 ```
 
-3. Please, note the full path of your extracted download, let's call the `$HOST`, hence the subdirectory `input` is `$HOST/input`.
+3. Please, note the full path of your extracted download, let's call it `$HOST`, hence the subdirectory `input` is `$HOST/input`.
 
 <br>
 
@@ -83,16 +83,16 @@ CholecTriplet 2022 Submission Guideline
 
     Visualizing the data samples and annotations.
 
-    A. Use the following to see list of all available video IDs:
-    ```
+    % A. Use the following to see list of all available video IDs:
+    
         cd $HOST
         python3 visualizer.py -l
-    ```
-    B. To visualize the image and labels in a particular video:
-    ```
+    
+    % B. To visualize the image and labels in a particular video:
+    
         python3 visualizer.py -i --video videoID
-    ```
-    C. Press Enter key to iterate over the frames.
+    
+    % C. Press Enter key to iterate over the frames.
 </details>
 
 <br>
@@ -100,11 +100,10 @@ CholecTriplet 2022 Submission Guideline
 
 # Challenge Docker build, validation, and submission
 
-This documents contains guidelines for challenge method submission under the following sub-heading:
+This documents contains guidelines for challenge submission preparation under the following sub-heading:
 
 1. Docker preparation
 2. Docker validation
-3. Docker submission
 
 
 Docker preparation
@@ -184,8 +183,8 @@ Docker validation
 Next is to test your Docker Image.
 We will cover two **mandatory** testing protocol here:
 
-- a. local testing
-- b. host testing
+- (a). local testing
+- (b). host testing
 
 The downloaded `$HOST` contains 4 directories: `input/, output/, validator/, docker/`:
 
@@ -193,7 +192,7 @@ The downloaded `$HOST` contains 4 directories: `input/, output/, validator/, doc
 <br>
 
 **input/**
-- *To be mounted with read only access during testing.*
+- *To be mounted with read only access during testing*
 
 The `input/` sub-directory contains the validation dataset for Docker testing purpose.         
 Please, note the full path to the downloaded `host` directory, which we earlier marked as $HOST, this means that the path to the `input/` sub-directory is `$HOST/input`.
@@ -216,7 +215,7 @@ where image1, image2, image3, ... will be temporally sequential images. Note aga
 
 
 **output/** 
-- *To be mounted with read/write access.*
+- *To be mounted with read/write access*
 
 This is where the model's output is written.         
 For each of the above mentioned input text files: `video_x.txt`, the participant must make a corresponding json file `video_x.json` in the `$HOST/output` folder in the following content format
@@ -303,46 +302,7 @@ In the event of successful validation, submit the log file to the challenge subm
 
 <br>
 
-
-
-Docker submission
-=================
-To submit your Docker for final evaluation, you need the following:
-1. A successfully validated Docker Image
-2. A success `team_name.log` status file produced by the validator on the Docker Image intended to submit.
-3. You also need a `16-bit-tag_number`. You can generate one for your team using this [website](https://random.org/strings/). Instruction: enter 1 in random box and 16 in character boxand tick all checkbox, click `Get Strings`. Copy the generated 16-bit strings. Please remember that this number must never be changed after you have used it to submit your first Docker Image. Keep it save.
-4. An `access token` to submit your docker on the organizer's docker-repo. This will be sent to your team. Please, contact the organizer's if you have not received it. Please make sure you register the dockerhub ahead.
-
-<br>
-
-
-## Tag Docker
-Please follow the following specifications, to tag your Docker Image:
-
-```
-    docker tag <image_name> <docker_repo>/<image_name>_<16-bit-tag_number>
-``` 
-- The docker_repo is provided as : https://hub.docker.com/r/camma/cholectriplet2022
-
-<br>
-
-
-## Push Docker
-You can push your docker to the DockerHub with the following command:
-```
-    docker push <docker_repo>/<image_name>_<16-bit-tag_number>
-
-```
-This will request the `access token` to complete.
-
-After submitting your docker image, please proceed to submit your draft report and summary presentation.
-These two files are needed to complete your challenge submission.
-
-- click to submit [validation log]()
-- click to submit [draft report]()
-- click to  submit [slide presentation]()
-
-
+Up Next: [Docker Submission](https://cholectriplet2022.grand-challenge.org/submission/)
 
 <br>
 
