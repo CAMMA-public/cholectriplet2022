@@ -20,14 +20,16 @@ CholecTriplet 2022 challenge on surgical action triplet detection
 This repository contains some implementation code: mock demo model, data loader, docker build guides, self-validator system, and evaluation scripts.
 
 
-## Getting started
+## <u>Getting started</u>
 All information about the challenge can be found on the Grand-challenge [website](https://cholectriplet2022.grand-challenge.org).
 
 
 
 ## Data loader
-- Open in Colab
+- [TensorFlow dataloader](https://github.com/CAMMA-public/cholect45/blob/main/dataloader_tf.py)
+- [PyTorch dataloader](https://github.com/CAMMA-public/cholect45/blob/main/dataloader_pth.py)
 
+© [Cholect45 Git Repo](https://github.com/CAMMA-public/cholect45)
 
 ## Practice on sample data
 Easy starting code of simple model in TensorFlow or PyTorch on small sample data from CholecT50.
@@ -38,14 +40,70 @@ Easy starting code of simple model in TensorFlow or PyTorch on small sample data
 ```
   pip install ivtmetrics
 ```
+ or 
+ ```
+  conda install -c nwoye ivtmetrics
+```
 
-## Docker guide
+## Docker and validation guide
 
-
-## Self-validator
+Detailed instruction to build, test, validate, run, and upload your method Docker on the challenge Dockerhub in provided [here](DockerREADME.md)
 
 
 ## Submission protocol
+- Follow the Docker build and validation guide to submit your docker
+- Submit also your summary report, validation log, and presentation slide
+
+
+## Organizer's Baseline Method
+
+The `Rendezvous (RDV)` for surgical action triplet recognition is modified to produce bounding boxes for the instrument tip of every recognized triplet.
+
+This is made possible by the weakly supervised localization (WSL) aspect of the RDV.
+The WSL branch in `RDV`'s encoder is responsible for instrument detection. It is trained on instrument's binary presence labels only. The localization is done via the resulting class activation map (CAM). We added an `adhoc function` to extract the bounding box coordinates for every positive  activation in this layer.
+
+The classifier in the `RDV`'s decoder  produces a vector of probility scores for the triplet class prediction. We extend this with a `heuristic function` to associate every extracted instrument bounding boxes to the corresponding triplet instance within a given frame.
+
+Model produces both vector of classwise probability scores for triplet recognition + bounding boxes of the instruments paired to positive triplet classes. The output can be formatted as a `list of list (lol)` or `list of dict (lod)` for each frame containing several instance triplet-box predictions.
+Full video prediction can be saved as a .`TXT` file or as a .`JSON` file
+
+Rendezvous_Det code and weights is provided [here]().
+
+**Requirements:**
+- PIL
+- Python >= 3.5
+- Pyorch >= 1.10.1
+- TorchVision >= 0.11
+- ivtmetrics
+
+
+**To Run**
+
+You need to map input/ and output/ directories to the corresponding input/ and output/ directories in the organizer's host folder.
+
+```
+    cd ..
+    cd rendezvous_det
+    python3 main.py \
+		--input_dir=/path/to/organizer's/input/data \
+		--output_dir=/path/to/organizer's/output/results \
+		--gpu='0'
+```
+Results are saved as .JSON in the output folder.
+
+*During Docker run, the input_dir and output_dir should be default as in the argparse field.*
+	
+
+**To evaluate performance**
+
+To see the model performance, execute thr following commands:
+```   
+    cd ..
+    cd $HOST/validator
+    python3 eval.py --gt_dir=/path/to/groundtruth --pd_dir=/path/to/predictions --log_dir=/path/to/write/results --threshold 0.5
+```
+
+
 
 ---
-maintainer @ camma 2022
+Maintainer @ camma 2022
