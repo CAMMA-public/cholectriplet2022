@@ -50,7 +50,8 @@ These two files are needed to complete your challenge submission.
 
 
 
-*Please direct any questions you may have regarding docker and docker submission to the #docker-submission channel on the T50 Challenge 2021 Slack group (https://join.slack.com/t/t50challenge2022/shared_invite/zt-1a1ilne29-kuNl58zarZgRLZs_vXyigg*)
+*Please direct any questions you may have regarding docker and docker submission to the #docker-submission channel on the [T50 Challenge 2021 Slack channel](https://join.slack.com/t/t50challenge2022/shared_invite/zt-1a1ilne29-kuNl58zarZgRLZs_vXyigg)*
+
 
 
 
