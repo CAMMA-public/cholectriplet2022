@@ -15,7 +15,7 @@ Copyright &copy; CAMMA, ICube, University of Strasbourg. All Rights Reserved.
 Docker Build and Validation Guidedline
 =========================================================
 
-This guide provides 3 step process to build and validate your Docker submission
+This guide provides 3-step processes to build and validate your Docker submission
 
 1. Download host resources
 2. Build Docker image
