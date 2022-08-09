@@ -303,7 +303,7 @@ To evaluate your Docker using the host validator, run the following command:
 At the end of each run, check the $HOST/output/ directory for the status and result of your validation. 
 Errors (debug statements), results, and validation status will be provided in `eeror.log`, `results.log`, and `team_passed.log` files respectively. 
 - On validation failed, debug and repeat docker build and validation (*Host testing*) until an error-free docker is produced.
-- On successful validation, submit your Docker `team_passed.log` file to the challenge submission portal.
+- On successful validation, submit your Docker `team_passed.log` file to the challenge submission [portal](https://cholectriplet2022.grand-challenge.org/validation).
 
 
 <br>

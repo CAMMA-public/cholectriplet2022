@@ -9,13 +9,14 @@
 
 [![](https://img.shields.io/badge/IN-PROGRESS-blue?style=for-the-badge)](https://hamzamohdzubair.github.io/redant/)
 
-
 # CholecTriplet2022
 CholecTriplet 2022 challenge on surgical action triplet detection
 
 <i>C.I. Nwoye, A. Murali, S. Sharma, T. Yu, K. Yuan, D. Alapatt, A. Vardazayan, and N. Padoy</i>
 
-<img src="file/logo2022.png" width="100%">
+
+![t50-logo-2022](https://user-images.githubusercontent.com/18656978/175311642-1781509a-b292-4e07-9e99-c043be7ee20c.png)
+
 
 This repository contains some implementation code: mock demo model, data loader, docker build guides, self-validator system, and evaluation scripts.
 
