@@ -96,7 +96,7 @@ Then, push your docker to the DockerHub with the following commands:
 
 
 ## 4. Submit Draft Report
-A summary of the proposed method is required to complete your challenge submission. Please ensure you use the provided [template](https://seafile.unistra.fr/f/f7d626afa2d2433fa8a4/?dl=1) and complete all fields marked required (*).
+A summary of the proposed method is required to complete your challenge submission. This will help to understand your proposed method and also contribute in writing a joint publication manuscript of the challenge methods. Please ensure you use the provided [template](https://seafile.unistra.fr/f/f7d626afa2d2433fa8a4/?dl=1) and complete all fields marked required (*).
 
 >> * Method Report: [click to upload](https://seafile.unistra.fr/u/d/6b6f3271ac8a42aaa9fc/)
 
