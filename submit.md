@@ -22,7 +22,7 @@ CholecTriplet 2022 Docker Submission Guideline
 To submit your Docker for final evaluation, you need the following:
 1. A successfully validated Docker Image. 
 2. A success `image-name_passed.log` status file produced by the validator on the Docker Image you intended to submit.
-3. Private keys (`team-repo` and `access-token`) to submit your Docker Image on the CholecTriplet DockerHub. 
+3. Private keys (`team-key` and `access-token`) to submit your Docker Image on the CholecTriplet DockerHub. 
 
 
 <br>
@@ -68,10 +68,10 @@ Login to the Challenge DockerHub using the following command:
 Please follow the following specifications, to tag your Docker Image for final submision:
 
 ```
-    docker tag <image-name> cholectriplet/<team-repo>/<image-name>:latest
+    docker tag <image-name> cholectriplet/<team-key>/<image-name>:latest
 ``` 
 
-- Example: if your Docker _image-name_ is "team404" and your private _team-repo_ is "2022-au8v12xw", tag your Docker as follows:
+- Example: if your Docker _image-name_ is "team404" and your private _team-key_ is "2022-au8v12xw", tag your Docker as follows:
 ```
     docker tag team404 cholectriplet/2022-au8v12xw/team404:latest
 ``` 
@@ -86,7 +86,7 @@ Please follow the following specifications, to tag your Docker Image for final s
 ## 3. Push Docker
 Then, push your docker to the DockerHub with the following commands:
 ```
-    docker push cholectriplet/<team-repo>/<image-name>:latest
+    docker push cholectriplet/<team-key>/<image-name>:latest
 
 ```
 
@@ -96,7 +96,7 @@ Then, push your docker to the DockerHub with the following commands:
 
 
 ## 4. Submit Draft Report
-A summary of the proposed method is required to complete your challenge submission. Please ensure you use the provided template and complete all fields marked required (*).
+A summary of the proposed method is required to complete your challenge submission. Please ensure you use the provided [template](https://seafile.unistra.fr/f/f7d626afa2d2433fa8a4/?dl=1) and complete all fields marked required (*).
 
 >> * Method Report: [click to upload](https://seafile.unistra.fr/u/d/6b6f3271ac8a42aaa9fc/)
 
@@ -105,11 +105,11 @@ A summary of the proposed method is required to complete your challenge submissi
 <br>
 
 ## 5. Submit Summary Presentation
-A one-minute slide/video presentation of your proposed model is needed to complete your challenge submission. This will be used to present your method at MICCAI in Singapore.
+A one-minute slide/video presentation of your proposed model is needed to complete your challenge submission. This will be used to present your method at MICCAI in Singapore. Please, use this [template](https://seafile.unistra.fr/f/31dd2c2a9876475a9687/?dl=1).
 
 >> * Presentation: [click to upload](https://seafile.unistra.fr/u/d/0ec9d916a90c455db81e/)
 
-
+_Optionally, you can also submit a transcript of your video._
 
 <br>
 <hr>
