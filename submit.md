@@ -54,7 +54,7 @@ In case of any changes/update on the final docker, a re-validation is required!
 Login to the Challenge DockerHub using the following command:
 
 ```
-    docker login -u cholectriplet
+    docker login -u <team-key>
 ``` 
  **Password:** This will request your private `access-token` to complete.
 
@@ -65,15 +65,14 @@ Login to the Challenge DockerHub using the following command:
 
 
 ## 2.    Tag Docker
-Please follow the following specifications, to tag your Docker Image for final submision:
+Tag your Docker Image for final submision using the following format:
 
 ```
-    docker tag <image-name> cholectriplet/<team-key>/<image-name>:latest
+    docker tag <image-name> <team-key>/submission/<image-name>:latest
 ``` 
-
-- Example: if your Docker _image-name_ is "team404" and your private _team-key_ is "2022-au8v12xw", tag your Docker as follows:
+ - Example: if your Docker _image-name_ is "team-endovis" and your private _team-key_ is "endovis22", tag your Docker as follows:
 ```
-    docker tag team404 cholectriplet/2022-au8v12xw/team404:latest
+    docker tag team-endovis endovis22/submission/team-endovis:latest
 ``` 
 
 
@@ -86,7 +85,7 @@ Please follow the following specifications, to tag your Docker Image for final s
 ## 3. Push Docker
 Then, push your docker to the DockerHub with the following commands:
 ```
-    docker push cholectriplet/<team-key>/<image-name>:latest
+    docker push <team-key>/submission/<image-name>:latest
 
 ```
 
