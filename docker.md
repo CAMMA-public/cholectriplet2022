@@ -323,7 +323,7 @@ Errors (debug statements), results, and validation status will be provided in `e
 - A quick start guide and tutorials to help you get started with docker is available [here](https://docs.docker.com/get-started)
 - We provide 5 short video clips for the validation
 - The test set used for official evaluation consists of 5 long laparoscopic cholecystectomy videos that are not public. This dataset will not be made available to the participants during the challenge.
-- The docker validation phase will take place between August 10 and August 30, 2022. Your docker output at this stage is not considered for the final challenge evaluation. This is just a sanity check to ensure that your docker is compliant with our input/output (i/o) protocol.
+- The docker validation phase will take place between June 1 and July 31, 2022. Your docker output at this stage is not considered for the final challenge evaluation. This is just a sanity check to ensure that your docker is compliant with our input/output (i/o) protocol.
 - Any i/o error will be corrected by the participants within this period. It is important not to modify your docker template or code structure after the validation phase to avoid complications during challenge evaluation.
 - Note that your model will be evaluated in an online mode meaning that we will simulate a real-time scenario during testing. To elaborate, while your model can leverage information from previous frames, it should not make use of future frames when predicting actions at the current timestep. Our testing i/o pipeline will check this.
 - We expect your model to run on a single GPU

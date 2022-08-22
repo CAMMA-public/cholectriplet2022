@@ -68,11 +68,11 @@ Login to the Challenge DockerHub using the following command:
 Tag your Docker Image for final submision using the following format:
 
 ```
-    docker tag <image-name> <team-key>/submission/<image-name>:latest
+    docker tag <image-name> <team-key>/submission:latest
 ``` 
- - Example: if your Docker _image-name_ is "team-endovis" and your private _team-key_ is "endovis22", tag your Docker as follows:
+ - Example: if your Docker _image-name_ is "endovis" and your private _team-key_ is "samba", tag your Docker as follows:
 ```
-    docker tag team-endovis endovis22/submission/team-endovis:latest
+    docker tag endovis samba/submission:latest
 ``` 
 
 
@@ -85,7 +85,7 @@ Tag your Docker Image for final submision using the following format:
 ## 3. Push Docker
 Then, push your docker to the DockerHub with the following commands:
 ```
-    docker push <team-key>/submission/<image-name>:latest
+    docker push <team-key>/submission:latest
 
 ```
 
