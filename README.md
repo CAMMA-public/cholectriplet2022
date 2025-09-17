@@ -10,6 +10,10 @@
 [![](https://img.shields.io/badge/IN-PROGRESS-blue?style=for-the-badge)](https://hamzamohdzubair.github.io/redant/)
 
 # CholecTriplet2022
+
+###  News
+- [ **17/09/2025** ]: Check out our [CAMMA Dataset Overlaps](https://github.com/CAMMA-public/camma_dataset_overlaps) repository for an analysis of video overlaps across Cholec80, CholecT50, and Endoscapes to ensure fair dataset splits.
+
 CholecTriplet 2022 challenge on surgical action triplet detection
 
 <i>C.I. Nwoye, A. Murali, S. Sharma, T. Yu, K. Yuan, D. Alapatt, A. Vardazayan, and N. Padoy</i>
